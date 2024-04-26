@@ -6,11 +6,18 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Database configuration (replace these values with your actual database configuration)
-db_config = { # Add MYSQL database info
+'''db_config = { # Add MYSQL database info
     'host': '100.27.162.213',
     'user': 'root',
     'password': 'qwerty',
     'database': 'cs491',
+}'''
+
+db_config = { # Add MYSQL database info
+    'host': 'cs491.c7oimaq4a85b.us-east-1.rds.amazonaws.com',
+    'user': 'admin',
+    'password': 'adminadmin',
+   
 }
 
 # Establish database connection at the beginning
